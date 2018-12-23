@@ -5,6 +5,6 @@ class Snake {
   }
 
   generate() {
-    return { x: this.initXCordinate, y: this.initYCordinate };
+    return { row: this.initXCordinate, col: this.initYCordinate };
   }
 }

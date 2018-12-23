@@ -21,11 +21,7 @@ class Board {
 
   integrateSnake(board, snakeCordinates) {
     let resultBoard = board.slice();
-    resultBoard[snakeCordinates.x][snakeCordinates.y] = ">";
+    resultBoard[snakeCordinates.row][snakeCordinates.col] = "=>";
     return resultBoard;
   }
 }
-
-let board = new Board(10);
-let initBoard = board.generate();
-console.log(board.integrateSnake(initBoard, { x: 5, y: 5 }));
