@@ -25,3 +25,5 @@ class Board {
     return resultBoard;
   }
 }
+
+module.exports = { Board };

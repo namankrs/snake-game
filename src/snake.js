@@ -8,3 +8,5 @@ class Snake {
     return { row: this.initXCordinate, col: this.initYCordinate };
   }
 }
+
+module.exports = { Snake };

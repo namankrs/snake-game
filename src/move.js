@@ -19,3 +19,7 @@ class Move {
     return { row: this.currCordinate.row, col: this.currCordinate.col + 1 };
   }
 }
+
+module.exports = {
+  Move
+};
