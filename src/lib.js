@@ -13,11 +13,18 @@ const generateSnake = function({ x, y }) {
   ax.box(x, y, 2, 1);
 };
 
+const eraseSnake = function() {
+  ax.bg(255, 255, 255);
+  ax.box(x - 1, y, 2, 1);
+};
+
 const moveSnake = function() {
-  generateBackdrop();
+  eraseSnake();
   generateSnake({ x: x++, y });
 };
 
 module.exports = {
-  moveSnake
+  generateBackdrop,
+  moveSnake,
+  generateSnake
 };
