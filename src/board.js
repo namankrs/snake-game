@@ -18,12 +18,6 @@ class Board {
     });
     return finalBoard;
   }
-
-  integrateSnake(board, snakeCordinates) {
-    let resultBoard = board.slice();
-    resultBoard[snakeCordinates.row][snakeCordinates.col] = "=>";
-    return resultBoard;
-  }
 }
 
 module.exports = { Board };
