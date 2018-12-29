@@ -1,6 +1,4 @@
 const ax = require("axel");
-let x = 10;
-let y = 10;
 
 const generateBackdrop = function() {
   ax.clear();
@@ -10,12 +8,7 @@ const generateBackdrop = function() {
 
 const generateSnake = function({ x, y }) {
   ax.bg(0, 0, 0);
-  ax.box(x, y, 2, 1);
-};
-
-const eraseSnake = function() {
-  ax.bg(255, 255, 255);
-  ax.box(x - 1, y, 2, 1);
+  ax.box(x, y, 1, 1);
 };
 
 const moveSnake = function() {
